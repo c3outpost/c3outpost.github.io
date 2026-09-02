@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C3 Outpost</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            background-color: #F7F5F0;
+            color: #221F1C;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            background: #fff;
+        }
+        .logo-side {
+            flex: 1 1 400px;
+            background-color: #F7F5F0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        .logo-side img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content-side {
+            flex: 1 1 400px;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h2 {
+            font-size: 2.2em;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            color: #D36B34;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            text-transform: uppercase;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+            font-size: 1.05em;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+        }
+        .link-list li {
+            margin-bottom: 15px;
+        }
+        .link-list a {
+            text-decoration: none;
+            color: #221F1C;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+        .link-list a:hover {
+            color: #D36B34;
+        }
+        .link-list a::before {
+            content: "→";
+            margin-right: 10px;
+            color: #D36B34;
+        }
+        .coming-soon {
+            font-size: 0.8em;
+            color: #888;
+            font-weight: normal;
+            margin-left: 8px;
+            text-transform: none; 
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .content-side { padding: 40px 20px; }
+            .logo-side { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="logo-side">
+            <img src="c3outpost.png" alt="C3 Outpost">
+        </div>
+        <div class="content-side">
+            <h2>C3 Outpost</h2>
+            <div class="subtitle">YOUR HOME FOR CARDS, CURIOS, AND COLLECTIBLES</div>
+            
+            <p>Based in Massachusetts, we source, evaluate, and trade high-quality sports cards, trading card games, and unique collectibles. Our vaults are currently being organized and our storefronts are coming soon. In the meantime, connect with us across our active platforms.</p>
+            
+            <ul class="link-list">
+                <li><a href="#">Shop TCGplayer <span class="coming-soon">(Coming Soon)</span></a></li>
+                <li><a href="#">View eBay Auctions <span class="coming-soon">(Coming Soon)</span></a></li>
+                <li><a href="#">Follow on Instagram</a></li>
+                <li><a href="#">Watch on TikTok</a></li>
+            </ul>
+
+            <div class="footer">
+                &copy; 2026 C3 Outpost LLC &trade;
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
